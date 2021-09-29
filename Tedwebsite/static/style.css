@@ -756,6 +756,50 @@ input:required {
 .classynav ul li.megamenu-item > a::after {
   color: #ff2b06; }
 
+ /* speakers dropdown css */
+
+ .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 260px;
+  box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: white;
+  background-color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {color: #ff2b06}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.one {
+  color: black;
+  font-size: 30px;
+  font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+}
+
+.middle {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
 .breakpoint-off .classynav ul li .dropdown,
 .breakpoint-off .classynav ul li .megamenu {
   width: 250px;

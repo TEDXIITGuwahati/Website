@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'gallery.apps.GalleryConfig',
     'speakers.apps.SpeakersConfig',
     'attendees.apps.AttendeesConfig',
+    'speakers2.apps.Speakers2Config',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -5,9 +5,22 @@ from .forms import SpeakerModelForm
 from django.contrib import messages
 from blog.models import Post
 
+
+def about_us(request):
+    return render(request, 'about_us/about_us.html')
+
+def contact(request):
+    return render(request, 'speakers/contact.html')
+
+def blogs(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/blog.html',{'posts': posts})
+
+def nominate_yourself(request):
+    return render(request, 'speakers/form2.html')
+
 def speakers_home(request):
     return render(request, 'speakers/speakers.html')
-
 
 def addSpeaker(request):
     if request.method == 'POST':
@@ -16,25 +29,6 @@ def addSpeaker(request):
             form.save()
     form = SpeakerModelForm()
     return render(request, 'speakers/form.html', {'form': form})
-
-
-def nominate_yourself(request):
-    return render(request, 'speakers/form2.html')
-
-
-def unrestricted(request):
-    return render(request, 'speakers/unrestricted.html')
-
-def blogs(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/blog.html',{'posts': posts})
-
-def about_us(request):
-    return render(request, 'about_us/about_us.html')
-
-def contact(request):
-    return render(request, 'speakers/contact.html')
-
 
 def speakerDesc1(request):
     return render(request, 'speakers/speaker21.html')

@@ -50,7 +50,13 @@
                         <div class="classynav">
                             <ul id="nav">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="speakers.html">Speakers</a></li>
+                                <div class="dropdown">
+                                    <li class="dropdown"><a href="#">Speakers</a></li>
+                                     <div class="dropdown-content">
+                                     <a href="speakers.html">TEDxIITGuwahati</a>
+                                     <a href="form2.html">TEDxIITGuwahatiStudio</a> 
+                                    </div>
+                                  </div>
                                 <li class="active"><a href="blog.html">Blogs</a></li>
                                 <li><a href="about_us.html">About Us</a></li>
                                 <!--                                <li><a href="/unrestricted.html">Unrestricted</a></li>-->
@@ -109,71 +115,6 @@
         <div class="our-blog-area section-padding 400">
             <div class="container">
                 <div class="row">
-
-
-
-                    <a href="https://bit.ly/nft_blog" target="_blank">
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <div class="single-blog-area style-2 wow fadeInUp"  data-wow-delay="300ms">
-                                <!-- Single blog Thumb -->
-                                <div class="single-blog-thumb" >
-                                    <img src='{% static "img/bg-img/jpg.png" %}' alt="">
-                                </div>
-                                <div class="single-blog-text text-center">
-                                    <a class="blog-title" href='https://bit.ly/nft_blog' target="_blank">A JPG sold for $69MN !
-                                        </a>
-                                    <!-- Post Meta -->
-        <!--                             <div class="post-meta">-->
-        <!--                                <a class="post-date" href="#"><i class="zmdi zmdi-alarm-check"></i> {{ post.published_date }}</a>-->
-        <!--                                <a class="post-author" href="#"><i class="zmdi zmdi-account"></i> {{ post.author }}</a>-->
-        <!--                             </div>-->
-                                    <p>Imagine paying $69 Million for a JPEG file that you can essentially download off the internet, and all you get is the right to display it and say you own it but not the copyright.
-                                        Seems crazy? What about $500,000 for an internet meme or $2.9 Million for the first tweet?
-                                        Well, that’s the weird world of NFTs.
-                                    </p>
-                                </div>
-                                <div class="blog-btn">
-                                    <a href='https://bit.ly/nft_blog' target="_blank"><i class="zmdi zmdi-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-
-
-                        
-
-
-
-                    <a href="https://bit.ly/Impostor_Blog" target="_blank">
-                            <div class="col-12 col-md-6 col-xl-4">
-                                <div class="single-blog-area style-2 wow fadeInUp"  data-wow-delay="300ms">
-                                    <!-- Single blog Thumb -->
-                                    <div class="single-blog-thumb" >
-                                        <img src='{% static "img/bg-img/medium.png" %}' alt="">
-                                    </div>
-                                    <div class="single-blog-text text-center">
-                                        <a class="blog-title" href='https://bit.ly/Impostor_Blog' target="_blank">The Impostor Syndrome
-                                            </a>
-                                        <!-- Post Meta -->
-            <!--                             <div class="post-meta">-->
-            <!--                                <a class="post-date" href="#"><i class="zmdi zmdi-alarm-check"></i> {{ post.published_date }}</a>-->
-            <!--                                <a class="post-author" href="#"><i class="zmdi zmdi-account"></i> {{ post.author }}</a>-->
-            <!--                             </div>-->
-                                        <p>Imagine you worked really hard to get into the university or job you wanted. 
-                                            You are full of joy and great expectations. 
-                                            However, on the very first day, a pit forms in your stomach as you realize that you don’t belong here.
-                                             It seems like it wasn’t your drive or accomplishments that brought you here, but luck and luck alone. 
-                                        </p>
-                                    </div>
-                                    <div class="blog-btn">
-                                        <a href='https://bit.ly/Impostor_Blog' target="_blank"><i class="zmdi zmdi-long-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-
-
-                            
                      {% for post in posts %}
                     <!-- Single Blog Area -->
                         <a href="{{post.link}}" target="_blank">
