@@ -21,6 +21,9 @@ def addSpeaker(request):
 def nominate_yourself(request):
     return render(request, 'speakers/form2.html')
 
+def nominate_others(request):
+    return render(request, 'speakers/speakers.html')
+
 
 def unrestricted(request):
     return render(request, 'speakers/unrestricted.html')

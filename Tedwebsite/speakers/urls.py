@@ -3,11 +3,19 @@ from . import views
 
 urlpatterns = [
     path('', views.speakers_home, name='speakers_home'),
-    path('/speakers.html', views.nominate_yourself),
+    path('/speakers.html', views.nominate_others),
     path('/form2.html', views.nominate_yourself),
     path('/blog.html', views.blogs),
     path('/about_us.html', views.about_us),
     path('/contact.html', views.contact),
+
+    
+    path('/speakers.html/form2.html', views.nominate_yourself),
+    path('/speakers.html/speakers.html', views.nominate_others),
+    path('/speakers.html/blog.html', views.blogs),
+    path('/speakers.html/about_us.html', views.about_us),
+    path('/speakers.html/contact.html', views.contact),
+
     
     path('/Alana_Golmei', views.speakerDesc1, name='speaker_description1'),
     path('/Anamika_Barua', views.speakerDesc2, name='speaker_description2'),
@@ -34,6 +42,30 @@ urlpatterns = [
     path('/Seema_Gupta', views.speakerDesc21, name='speaker_description21'),
     path('/Shiva_Sah', views.speakerDesc22, name='speaker_description22'),
  
+    path('/speakers.html/Alana_Golmei', views.speakerDesc1, name='speaker_description1'),
+    path('/speakers.html/Anamika_Barua', views.speakerDesc2, name='speaker_description2'),
+    path('/speakers.html/Arup_Kumar_Dutta', views.speakerDesc3, name='speaker_description3'),
+    path('/speakers.html/Binita_Jain', views.speakerDesc4, name='speaker_description4'),
+    path('/speakers.html/Milin_Dutta', views.speakerDesc5, name='speaker_description5'),
+    path('/speakers.html/Zoma_Sailo', views.speakerDesc6, name='speaker_description6'),
+    path('/speakers.html/Pragnya_Ramjee', views.speakerDesc7, name='speaker_description7'),
+
+    path('/speakers.html/Seema_Biswas', views.speakerDesc8, name='speaker_description8'),
+    path('/speakers.html/Uddhab_Bharali', views.speakerDesc9, name='speaker_description9'),
+    path('/speakers.html/Sankara_Subramaniam', views.speakerDesc10, name='speaker_description10'),
+    path('/speakers.html/Hasina_Kharbhih', views.speakerDesc11, name='speaker_description11'),
+    path('/speakers.html/Sonjoy_Hazarika', views.speakerDesc12, name='speaker_description12'),
+    path('/speakers.html/Ravindranath_Ravi', views.speakerDesc13, name='speaker_description13'),
+
+    path('/speakers.html/Aashish_Chandratreya', views.speakerDesc14, name='speaker_description14'),
+    path('/speakers.html/Aditya_Gupta', views.speakerDesc15, name='speaker_description15'),
+    path('/speakers.html/Bhagvan_Kommadi', views.speakerDesc16, name='speaker_description16'),
+    path('/speakers.html/Bidisha_Som', views.speakerDesc17, name='speaker_description17'),
+    path('/speakers.html/Nisha_Bora', views.speakerDesc18, name='speaker_description18'),
+    path('/speakers.html/Prabhagaran', views.speakerDesc19, name='speaker_description19'),
+    path('/speakers.html/Rudy_Wallang', views.speakerDesc20, name='speaker_description20'),
+    path('/speakers.html/Seema_Gupta', views.speakerDesc21, name='speaker_description21'),
+    path('/speakers.html/Shiva_Sah', views.speakerDesc22, name='speaker_description22'),
 
    path('/about_us.html/Jaikishan_Mansukhani', views.memberDesc1, name='member_description1'),
     path('/about_us.html/Anvita_Kodru', views.memberDesc2, name='member_description2'),
