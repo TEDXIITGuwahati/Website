@@ -1,15 +1,8 @@
-# from django.urls import path
-#
-# from . import views
-#
-# urlpatterns = [
-#     path('', views.index, name='index'),
-# ]
 from django.urls import path
 from . import views
 urlpatterns = [
 
- path('/speakers.html', views.nominate_others),
+    path('/speakers.html', views.nominate_others),
     path('/form2.html', views.nominate_yourself),
     path('/blog.html', views.blogs),
     path('/about_us.html', views.about_us),

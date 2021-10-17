@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.shortcuts import render
 from django.utils import timezone
 from django.http import HttpResponse
 from .forms import SpeakerModelForm
@@ -35,8 +34,6 @@ def about_us(request):
 
 def contact(request):
     return render(request, 'speakers/contact.html')
-
-
 
 
 def about_us_home(request):
