@@ -14,7 +14,7 @@ urlpatterns = [
     path('/speakers.html/speakers.html', views.nominate_others),
     path('/speakers.html/blog.html', views.blogs),
     path('/speakers.html/about_us.html', views.about_us),
-    path('/speakers.html/contact.html', views.contact),
+    path('/contact.html', views.contact),
 
     
     path('/Alana_Golmei', views.speakerDesc1, name='speaker_description1'),

@@ -1,4 +1,39 @@
 from django.shortcuts import render
+from django.utils import timezone
+from django.http import HttpResponse
+from .forms import SpeakerModelForm
+from django.contrib import messages
+from blog.models import Post
+
+
+def addSpeaker(request):
+    if request.method == 'POST':
+        form = SpeakerModelForm(request.POST)
+        if form.is_valid():
+            form.save()
+    form = SpeakerModelForm()
+    return render(request, 'speakers/form.html', {'form': form})
+
+
+def nominate_yourself(request):
+    return render(request, 'speakers/form2.html')
+
+def nominate_others(request):
+    return render(request, 'speakers/speakers.html')
+
+
+def unrestricted(request):
+    return render(request, 'speakers/unrestricted.html')
+
+def blogs(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/blog.html',{'posts': posts})
+
+def about_us(request):
+    return render(request, 'about_us/about_us.html')
+
+def contact(request):
+    return render(request, 'speakers/contact.html')
 
 
 def about_us_home(request):

@@ -36,7 +36,7 @@
                 <nav class="classy-navbar justify-content-between" id="conferNav">
 
                     <!-- Logo -->
-                   <a class="nav-brand" href="form2.html"><img src='{% static "img/core-img/Studio_icon.png" %}' alt="" width="550"/></a>
+                   <a class="nav-brand" href="form2.html"><img src='{% static "img/core-img/Studio_icon.png" %}' alt="" width="436"/></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -57,14 +57,15 @@
                                 <div class="dropdown">
                                     <li class="active" class="dropdown"><a href="#">Speakers</a></li>
                                      <div class="dropdown-content">
-                                     <a href="speakers.html">TEDxIITGuwahati</a>
-                                     <a class="active" href="form2.html">TEDxIITGuwahatiStudio</a> 
+                                     <a href="/speakers.html">TEDxIITGuwahati</a>
+                                     <a class="active" href="/speakers.html/form2.html">TEDxIITGuwahatiStudio</a> 
                                     </div>
                                   </div>
-                                <li><a href="blog.html">Blogs</a></li>
-                                <li><a href="about_us.html">About Us</a></li>
-                                <!--                                <li><a href="/unrestricted.html">Unrestricted</a></li>-->
-                                <li><a href="/contact.html">Contact</a></li>
+                                <li><a href="/blog.html">Blogs</a></li>
+                                     
+                                <li><a href="/about_us.html">About Us</a></li>
+                                <li><a href="/partners.html">Partners</a></li>
+                                <li><a href="/contact.html">Contact Us</a></li>
 <!--                                <li><a href="#">Nominate</a>-->
 <!--                                    <ul class="dropdown">-->
 <!--                                        <li><a href="nominate_speaker.html">Nominate a Speaker</a></li>-->
@@ -106,13 +107,13 @@
                             D<span style="text-transform: lowercase;">o you have your own idea or perspective, you believe, needs to be shared?</span>
                         </p>
                         <p style="color:#000000; margin-bottom:10px">
-                            D<span style="text-transform: lowercase;">o you wish to be a  TEDx speaker at our event?</span>
+                            D<span style="text-transform: lowercase;">o you wish to be a TEDx speaker at our event?</span>
                         </p>
                         <p style="color:#000000; margin-bottom:10px">
                             W<span style="text-transform: lowercase;">e invite you to submit a speaker nomination!</span>
                         </p>
                         <p style="color:#000000; margin-bottom:10px">
-                            T<span style="text-transform: lowercase;">o nominate yourself as a speaker for our TEDx event, fill out the speaker nomination form. Kindly keep in mind that our curators will choose speakers at their discretion, based on the ideal fit to our theme. Once submitted, all nominations will remain in our speaker database for further consideration, as we plan our upcoming flagship event in February 2021.</span>
+                            T<span style="text-transform: lowercase;">o nominate yourself as a speaker for our TEDx event, fill out the speaker nomination form. Kindly keep in mind that our curators will choose speakers at their discretion, based on the ideal fit to our theme. Once submitted, all nominations will remain in our speaker database for further consideration, as we plan our upcoming flagship event in February 202.</span>
                         </p>
                         <p style="color:#000000; margin-bottom:10px">
                             Thank you!
@@ -127,201 +128,6 @@
         </div>
     </section>
 
-<!--    <section class="breadcrumb-area bg-img jarallax" style="background-color: #ffffff;">-->
-<!--        <div class="container h-100">-->
-<!--            <div class="row h-100 align-items-center">-->
-<!--                <div class="col-12">-->
-<!--                    <div class="breadcrumb-content">-->
-<!--                        <h1 class="page-title">Nominate Yourself</h1>-->
-<!--                        <nav aria-label="breadcrumb">-->
-<!--                            <ol class="breadcrumb">-->
-<!--                                <h6>-->
-<!--                                    Do you feel like you are capable of giving a TED Talk?-->
-<!--                                    Then go ahead and fill this form!-->
-<!--                                </h6>-->
-<!--                            </ol>-->
-<!--                        </nav>-->
-<!--                        <br />-->
-
-<!--                        &lt;!&ndash; Form Link &ndash;&gt;-->
-<!--                        <a class="typeform-share button" href="https://form.typeform.com/to/FME8FL15" data-mode="popup" style="display:inline-block;text-decoration:none;background: linear-gradient(217deg, #ff0000, #000000);color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:15px;line-height:37.5px;text-align:center;margin:0;height:37.5px;padding:0px 25px;border-radius:18px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Fill here </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-    <!-- Breadcrumb Area End -->
-
-    <!-- Form Area Start  -->
-<!--    <section class="our-speaker-area section-padding-100">-->
-<!--&lt;!&ndash;&ndash;&gt;-->
-<!--        <div class="container">-->
-<!--            <div class="row justify-content-between">-->
-<!--                {% csrf_token %}-->
-<!--&lt;!&ndash;                {% if form.errors %}&ndash;&gt;-->
-<!--&lt;!&ndash;                    {% for field in form %}&ndash;&gt;-->
-<!--&lt;!&ndash;                        {% for error in field.errors %}&ndash;&gt;-->
-<!--&lt;!&ndash;                            <div class="alert alert-danger">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <strong>{{ error|escape }}</strong>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        {% endfor %}&ndash;&gt;-->
-<!--&lt;!&ndash;                    {% endfor %}&ndash;&gt;-->
-<!--&lt;!&ndash;                    {% for error in form.non_field_errors %}&ndash;&gt;-->
-<!--&lt;!&ndash;                        <div class="alert alert-danger">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <strong>{{ error|escape }}</strong>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                    {% endfor %}&ndash;&gt;-->
-<!--&lt;!&ndash;                {% endif %}&ndash;&gt;-->
-<!--&lt;!&ndash;                <form method="post">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <div id="div_id_nominee_name" class="control-group">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <label for="id_nominee_name" class="control-label requiredField">&ndash;&gt;-->
-<!--&lt;!&ndash;                            Nominee's Name:&ndash;&gt;-->
-<!--&lt;!&ndash;                            <span class="asteriskField">*</span>&ndash;&gt;-->
-<!--&lt;!&ndash;                            ::after&ndash;&gt;-->
-<!--&lt;!&ndash;                        </label>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <div class="controls">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <input type="text" name="nominee_name" maxlength="200" class="textinput textInput"&ndash;&gt;-->
-<!--&lt;!&ndash;                            required id="id_nominee_name" >&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                </form>&ndash;&gt;-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
-<!--    <section class="contact-our-area section-padding-100-0">-->
-<!--        <div class="container">-->
-<!--            <div class="row justify-content-between">-->
-<!--                <div class="row">-->
-<!--                    &lt;!&ndash; Contact Form &ndash;&gt;-->
-<!--                    <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">-->
-<!--                        <div class="contact_form">-->
-<!--                            <form method="post" name="submit-to-google-sheet" id="test-form">-->
-<!--                                {% csrf_token %}-->
-<!--                                <div class="contact_input_area">-->
-<!--                                    <div id="success_fail_info"></div>-->
-<!--                                    <div class="row">-->
-<!--                                        &lt;!&ndash; Form Group &ndash;&gt;-->
-<!--                                        <div class="col-12 col-lg-6">-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label style="color: white">-->
-<!--                                                    Your Name:     *-->
-<!--                                                </label>-->
-<!--                                                <input type="text" class="form-control mb-30" name="fname" id="fname1" placeholder="First Name" required>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        &lt;!&ndash; Form Group &ndash;&gt;-->
-<!--                                        <div class="col-12 col-lg-6">-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label style="color: #21235c">-->
-<!--                                                    Your Name:     *-->
-<!--                                                </label>-->
-<!--                                                <input type="text" class="form-control mb-30" name="lname" id="lname2" placeholder="Last Name" required>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        &lt;!&ndash; Form Group &ndash;&gt;-->
-<!--                                        <div class="col-12 col-lg-6">-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label style="color: white">-->
-<!--                                                    Email address:     *-->
-<!--                                                </label>-->
-<!--                                                <input type="email" class="form-control mb-30" name="email_id" id="emailid" placeholder="E-mail" required>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        &lt;!&ndash; Form Group &ndash;&gt;-->
-<!--                                        <div class="col-12 col-lg-6">-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label style="color: white">-->
-<!--                                                    Contact Number:    *-->
-<!--                                                </label>-->
-<!--                                                <input type="number" class="form-control mb-30" name="contact_no" id="contactno" placeholder="Your Number" required>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        &lt;!&ndash; Form Group &ndash;&gt;-->
-<!--                                        <div class="col-12 col-lg-6">-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label style="color: white">-->
-<!--                                                    Age:    *-->
-<!--                                                </label>-->
-<!--                                                <input type="number" class="form-control mb-30" name="age" id="age" placeholder="Your age" required>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        &lt;!&ndash; Form Group &ndash;&gt;-->
-<!--                                        <div class="col-12 col-lg-6">-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label style="color: white">-->
-<!--                                                    City:    *-->
-<!--                                                </label>-->
-<!--                                                <input type="text" class="form-control mb-30" name="city" id="city" placeholder="Your City" required>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        <div class="col-12">-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label style="color: white">-->
-<!--                                                    Tell us about yourself. (Occupation/Any honors or distinctions/Recent work, etc):    *-->
-<!--                                                </label>-->
-<!--                                                <textarea class="form-control mb-30" name="about" id="about" cols="30" rows="6" placeholder="Your message" required></textarea>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        &lt;!&ndash; Form Group &ndash;&gt;-->
-<!--                                        <div class="col-12">-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label style="color: white">-->
-<!--                                                    Briefly describe your idea and your reason for choosing the same. *-->
-<!--                                                </label>-->
-<!--                                                <textarea class="form-control mb-30" name="idea" id="idea" cols="30" rows="6" placeholder="Your Message" required></textarea>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        &lt;!&ndash; Form Group &ndash;&gt;-->
-<!--                                        <div class="col-12">-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label style="color: white">-->
-<!--                                                    In one sentence, what is the key takeaway that you want the audience to know/ feel after listening to your talk?     *-->
-<!--                                                </label>-->
-<!--                                                <textarea class="form-control mb-30" name="takeaway" id="takeaway" cols="30" rows="6" placeholder="Your Message" required></textarea>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        &lt;!&ndash; Form Group &ndash;&gt;-->
-<!--                                        <div class="col-12">-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label style="color: white">-->
-<!--                                                    Why do you want to be a TEDxIITGuwahati speaker?  *-->
-<!--                                                </label>-->
-<!--                                                <textarea class="form-control mb-30" name="why" id="why" cols="30" rows="6" placeholder="Your Message" required></textarea>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        &lt;!&ndash; Form Group &ndash;&gt;-->
-<!--                                        <div class="col-12">-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label style="color: white">-->
-<!--                                                    Have you been a speaker before? Please share video links if possible. *-->
-<!--                                                </label>-->
-<!--                                                <textarea class="form-control mb-30" name="SpokenBefore" id="message4" cols="30" rows="6" placeholder="Your Message" required></textarea>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        &lt;!&ndash; Form Group &ndash;&gt;-->
-<!--                                        <div class="col-12">-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label style="color: white">-->
-<!--                                                     Would you like to share some of your past talks/writings or anything that expresses you? If yes, please do share. *-->
-<!--                                                </label>-->
-<!--                                                <textarea class="form-control mb-30" name="PastTalk" id="message5" cols="30" rows="6" placeholder="Your Message" required></textarea>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        &lt;!&ndash; Button &ndash;&gt;-->
-<!--                                        <div class="col-12">-->
-<!--                                                <button type="submit" id="submit-form" class="btn confer-btn" >Send Message <i class="zmdi zmdi-long-arrow-right"></i></button>-->
-<!--                                        </div>-->
-
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </form>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
 
     <!-- Our Speakings Area Start -->
     <div class="container">
@@ -333,17 +139,53 @@
                    <div> <h2 style="margin-left: 0px;"><font size="+5" color="#FF2B06" >Recent Speakers</font></h2></div>
                    <br>
                    <br>
-                    <div class="glow">
-                        <div class="one">
-                          <div class="middle">
-                            <h1>COMING SOON...</h1>
-                          </div>
-                        </div>
-                       </div>
+
+                            
                 </div>
             </div>
         </div>
     </div>
+
+                   
+            <div class="row" style="text-align:center;">
+                <div class="row">
+
+
+ <!-- Single Speaker Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="single-speaker-area wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Thumb -->
+                            <div class="speaker-single-thumb">
+                                
+                            </div>
+                        </div>
+                        
+                            
+                            
+                        </div>
+                    </div>                  
+
+
+                    <!-- Single Speaker Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="single-speaker-area wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Thumb -->
+                            <div class="speaker-single-thumb">
+                                <img src='{%static "images/studio/raman.jpg" %}' alt="Avatar" style="widows: 100px">
+                            </div>
+                        </div>
+                        <div class="speaker-info" onclick="location.href='speakers.html/Shiva_Sah'" style="cursor: pointer">
+                            <h5><span style="color:#FF2B06;">VR Raman</span></h5>
+                            <p>Director of policy, Water Aid India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+          
 
 
 <!-- Footer Area Start -->

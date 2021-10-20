@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ['tedxiitguwahati.in','ec2-65-2-125-47.ap-south-1.compute.amazon
 
 INSTALLED_APPS = [
     'home.apps.HomeConfig',
+    'about_us.apps.about_usConfig',
     'blog.apps.BlogConfig',
     'gallery.apps.GalleryConfig',
     'speakers.apps.SpeakersConfig',
