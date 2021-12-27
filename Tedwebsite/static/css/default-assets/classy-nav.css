@@ -352,7 +352,7 @@
   top: 0;
   left: -340px;
   z-index: 9999;
-  width: 320px;
+  width: 260px;
   height: 100%;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
@@ -424,7 +424,7 @@
       width: 100%;
       left: 0;
       top: 0;
-      z-index: 200;
+      z-index: 1;
       box-shadow: none; }
       .breakpoint-on .classynav ul li .megamenu .single-mega.cn-col-5,
       .breakpoint-on .classynav ul li .megamenu .single-mega.cn-col-4,
@@ -435,6 +435,12 @@
 .breakpoint-on .classynav > ul > li > a {
   background-color: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  .breakpoint-on .classynav > ul > ul > li > a {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+    .breakpoint-on .classynav > ul > ul > div > a {
+      background-color: transparent;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 .breakpoint-on .classynav ul li ul.dropdown li ul li {
   margin-left: 15px; }
 .breakpoint-on .classynav ul li.megamenu-item > a::after,

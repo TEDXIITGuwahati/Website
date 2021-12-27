@@ -49,13 +49,13 @@
                         <div class="classynav">
                             <ul id="nav">
                                 <li><a href="/">Home</a></li>
-                                <div class="dropdown">
-                                    <li class="dropdown"><a href="#">Speakers</a></li>
+                                <ul class="dropdown">
+                                    <li class="dropdown1"><a href="#">Speakers</a></li>
                                      <div class="dropdown-content">
                                      <a href="/speakers.html">TEDxIITGuwahati</a>
                                      <a href="/speakers.html/form2.html">TEDxIITGuwahatiStudio</a> 
                                     </div>
-                                  </div>
+                                  </ul>
                                 <li><a href="/blog.html">Blogs</a></li>
                                 <li class="active"><a href="/about_us.html">About Us</a></li>
                                 <li><a href="/partners.html">Partners</a></li>
@@ -72,7 +72,8 @@
 <!--                                        <li><a href="single-blog.html">- Single Blog</a></li>-->
 <!--                                        <li><a href="contact.html">- Contact</a></li>-->
 <!--                                        <li><a href="#">- Dropdown</a>-->
-<!--                                            <ul class="dropdown">-->
+<!--                                            <ul class="dropdown "  width="100%" height="350px">-->
+
 <!--                                                <li><a href="#">- Dropdown Item</a></li>-->
 <!--                                                <li><a href="#">- Dropdown Item</a></li>-->
 <!--                                                <li><a href="#">- Dropdown Item</a></li>-->
@@ -1058,6 +1059,24 @@
 <!-- Footer Area End -->
 
     <!-- **** All JS Files ***** -->
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown1");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          this.classList.toggle("active");
+          }
+          });
+        }
+        </script>
+
     <!-- jQuery 2.2.4 -->
     <script src='{% static "js/jquery.min.js" %}'></script>
     <!-- Popper -->
