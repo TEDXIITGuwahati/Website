@@ -718,6 +718,12 @@ input:required {
         max-width: 290px;
         margin-right: 15px; }
     }
+
+    @media only screen and (max-width: 767px) {
+       .nav-brand-2 {
+        max-width: 300px;
+        margin-right: 15px; } }
+
     .classy-nav-container .classy-navbar .classynav ul li a {
       font-size: 14px;
       text-transform: uppercase;
