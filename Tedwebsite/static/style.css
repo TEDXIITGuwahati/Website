@@ -1069,6 +1069,15 @@ input:required {
         .single-welcome-slide .welcome-text-two .event-meta a i {
           margin-right: 5px; }
 
+
+.responsive_youtube_video{
+  width: 100%;
+  border: none;
+}
+
+
+
+
 /* :: Footer Area CSS #111343 */
 .footer-area {
   position: relative;
