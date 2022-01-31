@@ -66,6 +66,12 @@ urlpatterns = [
     path('/speakers.html/Rudy_Wallang', views.speakerDesc20, name='speaker_description20'),
     path('/speakers.html/Seema_Gupta', views.speakerDesc21, name='speaker_description21'),
     path('/speakers.html/Shiva_Sah', views.speakerDesc22, name='speaker_description22'),
+   
+#    the linking of the speakers of studio 2021-22
+
+    path('/speakers.html/VR_Raman', views.speakerDesc100, name='speaker_description100'),
+    path('/speakers.html/Binayak_Acharya', views.speakerDesc101, name='speaker_description101'),
+    path('/speakers.html/Helia_Singh', views.speakerDesc102, name='speaker_description102'),
 
    path('/about_us.html/Jaikishan_Mansukhani', views.memberDesc1, name='member_description1'),
     path('/about_us.html/Anvita_Kodru', views.memberDesc2, name='member_description2'),

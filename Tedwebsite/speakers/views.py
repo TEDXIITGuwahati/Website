@@ -230,3 +230,16 @@ def memberDesc34(request):
 
 def memberDesc35(request):
     return render(request, 'about_us/Member35.html')
+
+# linking of studio speakers 2021-22
+
+
+def speakerDesc100(request):
+    return render(request, 'speakers/vr_raman40.html')    
+
+
+def speakerDesc101(request):
+    return render(request, 'speakers/Binayak_41.html')    
+
+def speakerDesc102(request):
+    return render(request, 'speakers/Helia42.html')        
