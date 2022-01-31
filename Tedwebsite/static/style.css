@@ -1072,6 +1072,7 @@ input:required {
 
 .responsive_youtube_video{
   width: 100%;
+  height: 350px;
   border: none;
 }
 
