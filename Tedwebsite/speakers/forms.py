@@ -3,8 +3,7 @@ from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Submit, Fieldset, ButtonHolder, Div
 from django import forms
 from .models import Speaker
-from django.utils.translation import ugettext_lazy as _
-
+from django.utils.translation import gettext_lazy as _
 
 class SpeakerModelForm(forms.ModelForm):
     class Meta:
