@@ -72,6 +72,7 @@ urlpatterns = [
     path('/speakers.html/VR_Raman', views.speakerDesc100, name='speaker_description100'),
     path('/speakers.html/Binayak_Acharya', views.speakerDesc101, name='speaker_description101'),
     path('/speakers.html/Helia_Singh', views.speakerDesc102, name='speaker_description102'),
+    path('/speakers.html/Akshita', views.speakerDesc103, name='speaker_description100'),
 
    path('/about_us.html/Jaikishan_Mansukhani', views.memberDesc1, name='member_description1'),
     path('/about_us.html/Anvita_Kodru', views.memberDesc2, name='member_description2'),

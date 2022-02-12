@@ -242,4 +242,7 @@ def speakerDesc101(request):
     return render(request, 'speakers/Binayak_41.html')    
 
 def speakerDesc102(request):
-    return render(request, 'speakers/Helia42.html')        
+    return render(request, 'speakers/Helia42.html')       
+
+def speakerDesc103(request):
+    return render(request, 'speakers/Akshita_43.html')          
