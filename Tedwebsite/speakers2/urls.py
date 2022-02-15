@@ -8,8 +8,10 @@ urlpatterns = [
     path('/blog.html', views.blogs),
     path('/about_us.html', views.about_us),
     path('/contact.html', views.contact),
+
     
- path('/about_us.html/Jaikishan_Mansukhani', views.memberDesc1, name='member_description1'),
+    
+    path('/about_us.html/Jaikishan_Mansukhani', views.memberDesc1, name='member_description1'),
     path('/about_us.html/Anvita_Kodru', views.memberDesc2, name='member_description2'),
     path('/about_us.html/Sreesiddesh_Bhavanasi', views.memberDesc3, name='member_description3'),
     path('/about_us.html/Shivangi_Kumar', views.memberDesc4, name='member_description4'),

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<!--<h1>{{ static }}</h1>-->
+<!--<img src='{% static "images/TEDxIITGuwahati1.png" %}' alt="LOGO">-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Rohan Agrawal</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href='{% static "img/core-img/favicon.png" %}'/>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href='{% static "style.css" %}'/>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="conferNav">
+
+                    <!-- Logo -->
+                   <a class="nav-brand" href="/"><img src='{% static "images/ted_white.png" %}' alt="" width="350"/></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+                        <!-- Menu Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li><a href="/">Home</a></li>
+                                <ul class="dropdown">
+                                    <li class="dropdown1"><a style="color:#ff2600;" href="#">Talks</a></li>
+                                     <div class="dropdown-content">
+                                      <a href="/event.html" style="color:#ff2600;" >TEDxIITGuwahati 2022</a> 
+                                     <a href="/speakers.html/form2.html">TEDxIITGuwahatiStudio</a>
+                                     <a href="/speakers.html">Past Events</a> 
+                                    </div>
+                                  </ul>
+                                <li><a href="/blog.html">Blogs</a></li>
+                                <li><a href="/about_us.html">About Us</a></li>
+                                <li><a href="/partners.html">Partners</a></li>
+                                <li><a href="/contact.html">Competitions</a></li>
+                            </ul>
+
+                            <!-- Get Tickets Button -->
+<!--                            <a href="#" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Get Tickets <i class="zmdi zmdi-long-arrow-right"></i></a>-->
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Breadcrumb Area Start -->
+    <!-- <section class="our-speaker-area section-padding-100">
+        <div class="container">
+            <div class="row"> -->
+                <!-- Heading -->
+                <!-- <div class="col-12">
+                    <div class="section-heading-3 text-center wow fadeInUp" data-wow-delay="300ms">
+                        <p><font size="+6"> Seema Biswas </font></p>
+                        <br>
+                        <style>
+                            img {
+                              border-radius: 50%;
+                              margin-top: 20px;
+                              margin-bottom: 20px;
+                            }
+
+                            </style>
+                        <img src='{% static "images/speakers1/seema-biswas.jpeg" %}'  width="160" height="150"alt="" align="centre">
+                        <p style="color:#000000">
+                                    Seema Biswas is an actress and theatre artist hailing from Assam. After completing a degree in Political Science from the Nalbari College she pursued drama at the NSD. Biswas went on to win the National Film award for the Best Actress for the film ‘Bandit Queen’, the 2000 Sangeet Natak Academy Award and the 2006 Best Actress Genie Award for ‘Water’.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <div style="margin-left: 100px ; margin-right:100px; padding-bottom :50px;">
+        <div style="height:150px"></div>
+        <hr style="width: 8rem; height:8px; margin-left:0px; background-color:#FF2B06; border-radius: 1.5px;">
+            <h1 style="color: #FF2B06;">Rohan Agrawal</span></h1><br>
+            <img src='{% static "images/speaker4/Rohan.jpg" %}'  width="260" height="250"alt="" style="float:left; margin-right:30px;">
+            <p style="font-size:20px; text-align:justify;">500000 kms. 17 states. 500 days. That has been his journey so far. 
+                Here we have a 19-year-old Rohan Agrawal. Quitting in his 2nd year of B. Com, believing in the ancient Gurukul 
+                system of learning, Rohan set out on a mission. He wants to learn, understand, and preach humanity, while also raising voice 
+                against plastic waste. He’s touched thousands of lives on his journey, and hopes to touch a few more using our platform in this event.
+
+            <div class="about-content-text">
+                <div class="social-info">
+                    <a href="https://www.instagram.com/yatri.rohan/" target="_blank"><i class="zmdi zmdi-instagram"></i></a>
+                    
+                </div></div> 
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+<!-- Footer Area Start -->
+<footer class="footer-area bg-img bg-overlay-2 section-padding-20-0">
+    <!-- Main Footer Area -->
+    <div class="main-footer-area">
+        <div class="container">
+            <div class="row">
+                <!-- Single Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget mb-60">
+                        <!-- Footer Logo -->
+                        <a href="/" class="footer-logo"><img src='{% static "images/ted_white.png" %}' alt=""></a>
+                        <!-- <p>Ideas Worth Spreading</p> -->
+
+                        <!-- Social Info -->
+                        <!-- <div class="social-info">
+                            <a href="https://www.facebook.com/TEDxIITGuwahati/" target="_blank"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="https://www.instagram.com/tedxiitguwahati/" target="_blank"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="https://twitter.com/tedxiitg" target="_blank"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/tedx-iit-guwahati/" target="_blank"><i class="zmdi zmdi-linkedin"></i></a>
+<a href="https://tedxiitguwahati.medium.com/" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a> -->
+<!--                                <a href="https://tedxtalk-iitg.medium.com/" target="_blank"><i class="ant-design:medium-outlined"></i></a>-->
+<!--                            <iconify-icon data-icon="ant-design:medium-outlined"></iconify-icon>-->
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget Area  col-lg-3 -->
+                <div class="col-12 col-sm-6">
+                   <div class="single-footer-widget mb-60">
+                       <br />
+                        <h5 class="widget-title">Ideas Worth Spreading</h5>
+                        <div class="footer-contact-info">
+                            <p>This independent TEDx is operated under license from TED</p>
+                            <!-- <p><i class="zmdi zmdi-map"></i> IIT Guwahati</p> -->
+                            <!-- <p><i class="zmdi zmdi-phone"></i> Jaikishan Mansukhani:</p><p style="margin-left: 15px">+91 90757 19391 </p>
+                            <p><i class="zmdi zmdi-email"></i> iitg.tedx@gmail.com</p> -->
+
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Single Footer Widget Area -->
+               <div class="col-12 col-sm-6 col-lg-3">
+                   <div class="single-footer-widget mb-60">
+                       <div class="social-info">
+                      <br>
+                        <a href="https://www.facebook.com/TEDxIITGuwahati/" target="_blank"><i class="zmdi zmdi-facebook"></i></a>
+                        <a href="https://www.instagram.com/tedxiitguwahati/" target="_blank"><i class="zmdi zmdi-instagram"></i></a>
+                        <a href="https://twitter.com/tedxiitg" target="_blank"><i class="zmdi zmdi-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/tedx-iit-guwahati/" target="_blank"><i class="zmdi zmdi-linkedin"></i></a>
+<a href="https://tedxiitguwahati.medium.com/" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+<!--                                <a href="https://tedxtalk-iitg.medium.com/" target="_blank"><i class="ant-design:medium-outlined"></i></a>-->
+<!--                            <iconify-icon data-icon="ant-design:medium-outlined"></iconify-icon>-->
+                    </div>
+
+                   </div>
+               </div>
+
+                <!-- Single Footer Widget Area -->
+<!--                    <div class="col-12 col-sm-6 col-lg-3">-->
+<!--                        <div class="single-footer-widget mb-60">-->
+<!--                            &lt;!&ndash; Widget Title &ndash;&gt;-->
+
+
+<!--                            &lt;!&ndash; Footer Gallery &ndash;&gt;-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+            </div>
+        </div>
+    </div>
+
+<!--         Copywrite Area-->
+    <!-- <div class="container">
+        <div class="copywrite-content">
+            <div class="row"> -->
+                <!-- Copywrite Text -->
+                <!-- <div class="col-12 col-md-6">
+                    <div class="copywrite-text"> -->
+                        <!--<p> Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<!--Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
+                            <!-- This independent TEDx event is operated under license from TED. -->
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. </p>-->
+                    <!-- </div>
+                </div> -->
+                <!-- Footer Menu -->
+<!--                    <div class="col-12 col-md-6">-->
+<!--                        <div class="footer-menu">-->
+<!--                            <ul class="nav">-->
+<!--                                <li><a href="#"><i class="zmdi zmdi-circle"></i> Terms of Service</a></li>-->
+<!--                                <li><a href="#"><i class="zmdi zmdi-circle"></i> Privacy Policy</a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+            <!-- </div>
+        </div>
+    </div> -->
+</footer>
+<!-- Footer Area End -->
+
+    <!-- **** All JS Files ***** -->
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown1");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          this.classList.toggle("active");
+          }
+          });
+        }
+        </script>
+
+
+    <!-- jQuery 2.2.4 -->
+<script src='{% static "js/jquery.min.js" %}'></script>
+<!-- Popper -->
+<script src='{% static "js/popper.min.js" %}'></script>
+<!-- Bootstrap -->
+<script src='{% static "js/bootstrap.min.js" %}'></script>
+<!-- All Plugins -->
+<script src='{% static "js/confer.bundle.js" %}'></script>
+<!-- Active -->
+<script src='{% static "js/default-assets/active.js" %}'></script>
+
+</body>
+
+</html>

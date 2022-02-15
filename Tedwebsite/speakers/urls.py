@@ -112,4 +112,8 @@ urlpatterns = [
 
 
     # path('add_speaker', views.addSpeaker),
+
+    # Linking of event speakers
+
+
 ]
