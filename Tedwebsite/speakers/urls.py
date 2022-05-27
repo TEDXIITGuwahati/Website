@@ -41,6 +41,15 @@ urlpatterns = [
     path('/Rudy_Wallang', views.speakerDesc20, name='speaker_description20'),
     path('/Seema_Gupta', views.speakerDesc21, name='speaker_description21'),
     path('/Shiva_Sah', views.speakerDesc22, name='speaker_description22'),
+
+    path('/jalal.html', views.speakerDesc44, name='speaker_description44'),
+    path('/Magician.html', views.speakerDesc45, name='speaker_description45'),
+    path('/parvathy.html', views.speakerDesc46, name='speaker_description46'),
+    path('/abhimanyu.html', views.speakerDesc47, name='speaker_description47'),
+    path('/rishab_mandeep.html', views.speakerDesc48, name='speaker_description48'),
+    path('/Rohan.html', views.speakerDesc49, name='speaker_description49'),
+    path('/saumya.html', views.speakerDesc50, name='speaker_description50'),
+    path('/james.html', views.speakerDesc51, name='speaker_description51'),
  
     path('/speakers.html/Alana_Golmei', views.speakerDesc1, name='speaker_description1'),
     path('/speakers.html/Anamika_Barua', views.speakerDesc2, name='speaker_description2'),
