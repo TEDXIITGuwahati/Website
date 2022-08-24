@@ -40,7 +40,7 @@ def about_us_home(request):
     return render(request, 'about_us/about_us.html')
 
 def memberDesc1(request):
-    return render(request, 'about_us/Member1.html')
+    return render(request, 'about_us/Member35.html')
 
 def memberDesc2(request):
     return render(request, 'about_us/Member2.html')
@@ -142,4 +142,4 @@ def memberDesc34(request):
     return render(request, 'about_us/Member34.html')
 
 def memberDesc35(request):
-    return render(request, 'about_us/Member35.html')
+    return render(request, 'about_us/Member1.html')
