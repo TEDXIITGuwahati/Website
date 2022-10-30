@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  web: 
+    build:
+      context: Tedwebsite
+      target: builder
+    ports: 
+      - '8000:8000'
+    networks:
+      - web
+    container_name: tedxwebsite-django
+    restart: always
+    labels:
+      # Allow Traefik to access the container
+      - "traefik.enable=true"
+      # Tells Traefik to look in web to find the internal IP of the container
+      - "traefik.docker.network=web"
+      # Entrypoints to websecure i.e., port 443
+      - "traefik.http.routers.tedxwebsite-secure.entrypoints=websecure"
+      # Rule for the url for webapp container
+      - "traefik.http.routers.tedxwebsite-secure.rule=Host(`tedxiitguwahati.in`)"
+
+networks:
+  web:
+    external: true
