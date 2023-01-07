@@ -87,11 +87,11 @@
             function calcTimeLeft(){
                 let expiredTime = new Date()
                 let current = new Date()
-                expiredTime.setDate(10);
+                expiredTime.setDate(1);
                 expiredTime.setHours(0)
                 expiredTime.setMinutes(0)
                 expiredTime.setSeconds(0)
-                expiredTime.setMonth(12)
+                expiredTime.setMonth(1)
                 let difference = expiredTime - current;
                 difference = difference /1000; // total seconds
                 let days, hours, min, sec;
